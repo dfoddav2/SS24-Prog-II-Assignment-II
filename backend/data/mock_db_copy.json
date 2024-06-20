@@ -1,0 +1,294 @@
+{
+  "asd@asd": {
+    "password": "123",
+    "name": "David Fodor",
+    "games": {
+      "wortle": {
+        "singleplayer": 5,
+        "no_singles": 5,
+        "multiplayer": 2,
+        "no_multi": 3
+      }
+    },
+    "wordbank": ["hallo", "bananen", "fahrrad", "jeman", "autos", "danke"],
+    "chats": {
+      "1": {
+        "agent_setting": "A german police officer is asking for your ID.",
+        "history": [
+          {
+            "sender": "user",
+            "message": "Guten Tag!",
+            "timestamp": "2020-12-01T12:00:00"
+          },
+          {
+            "sender": "agent",
+            "message": "Guten Tag, ich bin Polizist. Kann ich bitte Ihren Ausweis sehen?",
+            "timestamp": "2020-12-01T12:00:00"
+          },
+          {
+            "sender": "user",
+            "message": "Ja, natürlich. Hier ist mein Ausweis.",
+            "timestamp": "2020-12-01T12:00:05"
+          },
+          {
+            "sender": "agent",
+            "message": "Vielen Dank. Haben Sie einen schönen Tag.",
+            "timestamp": "2020-12-01T12:00:10"
+          }
+        ]
+      },
+      "2": {
+        "agent_setting": "You are a cashier at Lidl. Going through a checkout.",
+        "history": [
+          {
+            "sender": "user",
+            "message": "Hallo!",
+            "timestamp": "2020-12-01T12:00:00"
+          },
+          {
+            "sender": "agent",
+            "message": "Hallo, wie geht es Ihnen heute?",
+            "timestamp": "2020-12-01T12:00:00"
+          },
+          {
+            "sender": "user",
+            "message": "Mir geht es gut, danke. Wie geht es Ihnen?",
+            "timestamp": "2020-12-01T12:00:05"
+          },
+          {
+            "sender": "agent",
+            "message": "Mir geht es auch gut. Haben Sie eine Lidl-Karte?",
+            "timestamp": "2020-12-01T12:00:10"
+          },
+          {
+            "sender": "user",
+            "message": "Ja, hier ist meine Lidl-Karte.",
+            "timestamp": "2020-12-01T12:00:15"
+          },
+          {
+            "sender": "agent",
+            "message": "Vielen Dank. Haben Sie einen schönen Tag.",
+            "timestamp": "2020-12-01T12:00:20"
+          }
+        ]
+      }
+    }
+  },
+  "abc@abc": {
+    "password": "456",
+    "name": "John Doe",
+    "games": {
+      "wortle": {
+        "singleplayer": 3,
+        "no_singles": 6,
+        "multiplayer": 1,
+        "no_multi": 3
+      }
+    },
+    "wordbank": ["flugzeug", "auto", "fahrrad"],
+    "chats": {
+      "1": {
+        "agent_setting": "You are a friend who I just ran into. I want to take you to the cinema.",
+        "history": [
+          {
+            "sender": "user",
+            "message": "Hallo, möchtest du ins Kino gehen, um den neuen Film zu sehen?",
+            "timestamp": "2020-12-01T12:00:00"
+          },
+          {
+            "sender": "agent",
+            "message": "Ja, ich möchte den neuen Film sehen. Wann gehen wir?",
+            "timestamp": "2020-12-01T12:00:05"
+          },
+          {
+            "sender": "user",
+            "message": "Wir können morgen um 18 Uhr gehen. Ist das in Ordnung?",
+            "timestamp": "2020-12-01T12:00:10"
+          },
+          {
+            "sender": "agent",
+            "message": "Ja, das passt. Ich freue mich darauf.",
+            "timestamp": "2020-12-01T12:00:15"
+          },
+          {
+            "sender": "user",
+            "message": "Super! Bis morgen.",
+            "timestamp": "2020-12-01T12:00:20"
+          }
+        ]
+      }
+    }
+  },
+  "jane.doe@example.com": {
+    "password": "789",
+    "name": "Jane Doe",
+    "games": {
+      "wortle": {
+        "singleplayer": 7,
+        "no_singles": 8,
+        "multiplayer": 3,
+        "no_multi": 4
+      }
+    },
+    "wordbank": ["katze", "hund", "haus", "garten"],
+    "chats": {
+      "1": {
+        "agent_setting": "You are customer service at a hotel, taking a booking in Berlin.",
+        "history": [
+          {
+            "sender": "agent",
+            "message": "Guten Tag, wie kann ich Ihnen helfen?",
+            "timestamp": "2021-01-01T14:00:00"
+          },
+          {
+            "sender": "user",
+            "message": "Ich möchte ein Zimmer buchen.",
+            "timestamp": "2021-01-01T14:00:05"
+          },
+          {
+            "sender": "agent",
+            "message": "Für wie viele Nächte?",
+            "timestamp": "2021-01-01T14:00:10"
+          },
+          {
+            "sender": "user",
+            "message": "Für drei Nächte, bitte.",
+            "timestamp": "2021-01-01T14:00:15"
+          },
+          {
+            "sender": "agent",
+            "message": "In Ordnung. Haben Sie spezielle Wünsche?",
+            "timestamp": "2021-01-01T14:00:20"
+          },
+          {
+            "sender": "user",
+            "message": "Ja, ein Zimmer mit Meerblick.",
+            "timestamp": "2021-01-01T14:00:25"
+          }
+        ]
+      }
+    }
+  },
+  "emma.johnson@example.com": {
+    "password": "def",
+    "name": "Emma Johnson",
+    "games": {
+      "wortle": {
+        "singleplayer": 8,
+        "no_singles": 9,
+        "multiplayer": 4,
+        "no_multi": 5
+      }
+    },
+    "wordbank": [
+      "blume",
+      "fenster",
+      "baum",
+      "vogel",
+      "wasser",
+      "feuer",
+      "erde",
+      "luft"
+    ],
+    "chats": {
+      "1": {
+        "agent_setting": "You are a cashier at the cinema.",
+        "history": [
+          {
+            "sender": "user",
+            "message": "Guten Tag, Ich möchte ein Ticket für den neuen Film.",
+            "timestamp": "2023-03-01T15:00:05"
+          },
+          {
+            "sender": "agent",
+            "message": "Für welche Uhrzeit?",
+            "timestamp": "2023-03-01T15:00:10"
+          },
+          {
+            "sender": "user",
+            "message": "Für die 18 Uhr Vorstellung.",
+            "timestamp": "2023-03-01T15:00:15"
+          },
+          {
+            "sender": "agent",
+            "message": "Das macht 10 Euro, bitte.",
+            "timestamp": "2023-03-01T15:00:20"
+          },
+          {
+            "sender": "user",
+            "message": "Hier bitte.",
+            "timestamp": "2023-03-01T15:00:25"
+          }
+        ]
+      }
+    }
+  },
+  "michael.smith@example.com": {
+    "password": "abc",
+    "name": "Michael Smith",
+    "games": {
+      "wortle": {
+        "singleplayer": 10,
+        "no_singles": 12,
+        "multiplayer": 5,
+        "no_multi": 6
+      }
+    },
+    "wordbank": [
+      "flugzeug",
+      "regen",
+      "buch",
+      "schule",
+      "freund",
+      "essen",
+      "trinken"
+    ],
+    "chats": {
+      "1": {
+        "agent_setting": "You are a waitress at a restaurant.",
+        "history": [
+          {
+            "sender": "user",
+            "message": "Guten Tag, Ich hätte gerne ein Schnitzel und eine Cola.",
+            "timestamp": "2022-05-01T18:00:05"
+          },
+          {
+            "sender": "agent",
+            "message": "Kommt sofort. Möchten Sie noch etwas dazu?",
+            "timestamp": "2022-05-01T18:00:10"
+          },
+          {
+            "sender": "user",
+            "message": "Nein, das ist alles. Danke.",
+            "timestamp": "2022-05-01T18:00:15"
+          },
+          {
+            "sender": "agent",
+            "message": "Alles klar. Einen Moment bitte.",
+            "timestamp": "2022-05-01T18:00:20"
+          }
+        ]
+      },
+      "2": {
+        "agent_setting": "You are a local in Berlin who is helping out a tourist with directions.",
+        "history": [
+          {
+            "sender": "user",
+            "message": "Entschuldigung, können Sie mir helfen? Ich suche den Bahnhof.",
+            "timestamp": "2022-06-01T09:00:00"
+          },
+          {
+            "sender": "agent",
+            "message": "Ja, gehen Sie geradeaus und dann links.",
+            "timestamp": "2022-06-01T09:00:05"
+          },
+          {
+            "sender": "user",
+            "message": "Vielen Dank!",
+            "timestamp": "2022-06-01T09:00:10"
+          }
+        ]
+      }
+    }
+  }
+}
