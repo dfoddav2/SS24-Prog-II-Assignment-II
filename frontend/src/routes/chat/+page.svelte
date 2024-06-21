@@ -126,21 +126,6 @@
 {/if}
 
 <style>
-	/* Setting up view */
-	/* @font-face {
-		font-family: 'OffBitBold';
-		src: url('OffBitBold.otf') format('opentype');
-		font-weight: normal;
-		font-style: normal;
-	}
-
-	@font-face {
-		font-family: 'GeistMedium';
-		src: url('Geist-Medium.ttf') format('truetype');
-		font-weight: normal;
-		font-style: normal;
-	} */
-
 	main {
 		height: calc(100vh - 85px);
 		font-family: 'GeistMedium', sans-serif;
@@ -176,6 +161,15 @@
 		overflow-y: auto;
 		/* background-color: cadetblue; */
 		border-right: 4px solid rgba(255, 255, 255, 0.25);
+
+		/* Hide scrollbar for Chrome, Safari, and Opera */
+		&::-webkit-scrollbar {
+			display: none;
+		}
+
+		/* Hide scrollbar for IE, Edge, and Firefox */
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
 	}
 
 	.new-chat {
@@ -245,6 +239,15 @@
 		flex-direction: column;
 		justify-content: flex-end;
 		align-items: center;
+
+		/* Hide scrollbar for Chrome, Safari, and Opera */
+		&::-webkit-scrollbar {
+			display: none;
+		}
+
+		/* Hide scrollbar for IE, Edge, and Firefox */
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
 	}
 
 	.chat-input {
@@ -270,6 +273,15 @@
 		color: white;
 		padding: 8px;
 		padding-left: 12px;
+
+		/* Hide scrollbar for Chrome, Safari, and Opera */
+		&::-webkit-scrollbar {
+			display: none;
+		}
+
+		/* Hide scrollbar for IE, Edge, and Firefox */
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
 	}
 
 	button {

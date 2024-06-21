@@ -7,7 +7,7 @@
 	let isLoading = true;
 	let wordbank = writable([]);
 	let incorrectWord = false;
-    let invalidWord = false;
+	let invalidWord = false;
 	let selectedWord = null;
 
 	function selectWord(word) {
@@ -69,7 +69,6 @@
 
 	let newWord = '';
 
-
 	function isValidWord(word) {
 		return /^[a-z]+$/.test(word);
 	}
@@ -78,10 +77,10 @@
 		if (!isValidWord(newWord)) {
 			console.error('Invalid word. The word should be a single, lowercase word without spaces.');
 			invalidWord = true;
-            if (incorrectWord) {
+			if (incorrectWord) {
 				incorrectWord = false;
 			}
-            return;
+			return;
 		}
 
 		const response = await fetch('http://localhost:7890/wordbank/user', {
@@ -101,15 +100,15 @@
 			if (incorrectWord) {
 				incorrectWord = false;
 			}
-            if (invalidWord) {
-                invalidWord = false;
-            }
+			if (invalidWord) {
+				invalidWord = false;
+			}
 			$wordbank = [...$wordbank, newWord];
 			newWord = '';
 		} else if (response.status === 409) {
-            if (invalidWord) {
-                invalidWord = false;
-            }
+			if (invalidWord) {
+				invalidWord = false;
+			}
 			incorrectWord = true;
 			newWord = '';
 		} else {
@@ -153,8 +152,8 @@
 				{#if incorrectWord}
 					<p>Word already in wordbank</p>
 				{/if}
-                {#if invalidWord}
-                    <p>Invalid word</p>
+				{#if invalidWord}
+					<p>Invalid word</p>
 				{/if}
 			</div>
 			<div class="wordbank-container">
@@ -170,7 +169,13 @@
 				<h2>{selectedWord}</h2>
 				<div class="mt-2">
 					<p>Meaning:</p>
-					<p>(TODO, maybe here we could scrape Wiktionary)</p>
+					<p>
+						(TODO, scraping - <a
+							style="text-decoration: underline;"
+							target="_blank"
+							href="https://de.wiktionary.org/wiki/{selectedWord}">this destination</a
+						>)
+					</p>
 				</div>
 				<div class="mt-6">
 					<p>Do you want to delete this word?</p>
@@ -276,6 +281,15 @@
 		width: 100%;
 		gap: 1rem;
 		overflow-y: scroll;
+
+		/* Hide scrollbar for Chrome, Safari, and Opera */
+		&::-webkit-scrollbar {
+			display: none;
+		}
+
+		/* Hide scrollbar for IE, Edge, and Firefox */
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
 	}
 
 	.word {

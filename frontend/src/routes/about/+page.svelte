@@ -33,20 +33,6 @@
 <style>
 	@import 'tailwindcss/base';
 
-	/* @font-face {
-		font-family: 'OffBitBold';
-		src: url('OffBitBold.otf') format('opentype');
-		font-weight: normal;
-		font-style: normal;
-	}
-
-	@font-face {
-		font-family: 'GeistMedium';
-		src: url('Geist-Medium.ttf') format('truetype');
-		font-weight: normal;
-		font-style: normal;
-	} */
-
 	main {
 		height: calc(100vh - 85px);
 		font-family: 'GeistMedium', sans-serif;

@@ -234,7 +234,7 @@
 				player1_mail: gameState.player1_mail,
 				player2: gameState.player2,
 				player2_mail: gameState.player2_mail,
-				solution: 'WORTL',
+				solution: gameState.solution,
 				guesses: $guesses,
 				history: history,
 				turn: $turn,
