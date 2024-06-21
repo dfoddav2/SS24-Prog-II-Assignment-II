@@ -16,6 +16,8 @@ Run and set up the parts seperately:
 
 Backend:
 
+> Tested on Python 3.12 and 3.10.4
+
 - `cd backend` - Go into the backend directory
 - `pip install -r requirements.txt` - To install the dependencies (you might want to create a venv beforehand)
 - `docker compose up -d` - To run MongoDB in a docker container (Look out, it creates a container named `backend`)
@@ -24,6 +26,10 @@ Backend:
 - Don't forget to tear down the database after using `docker compose down -v`.
 
 Backend (SwaggerUI):
+
+> Requirements: node >= 18.13 (For SvelteKit)
+
+> Tested on Node 20. on Windows with both Arc browser and Chrome
 
 - To test routes using SwaggerUI you have to authorize yourself first. (of course only if you are not trying to test the need for authorization / routes that do not need it)
 - To authorize yourself, navigate to the `User/login` endpoint and try using the JSON input to log in
@@ -50,6 +56,11 @@ To test:
 - `cd backend` - Go into the backend directory
 - `docker compose up -d` - To run MongoDB in a docker container (Look out, it creates a container named `backend`)
 - `pytest` to run pytest
+
+## Tips
+
+- Use `asd@asd` - `123` as a deafult user to look around
+- When playing `Wortle` check the console.log, I deliberately left logs there (and many other places) so that you can see what the answer is
 
 ## Design choices
 
