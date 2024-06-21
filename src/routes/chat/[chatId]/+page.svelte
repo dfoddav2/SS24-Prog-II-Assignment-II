@@ -246,7 +246,7 @@
 								tabindex="0"
 								role="button"
 							>
-								{index}: {message.message}
+								{message.message}
 							</div>
 						{:else}
 							<div
@@ -258,7 +258,7 @@
 								tabindex="0"
 								role="button"
 							>
-								{index}: {message.message}
+								{message.message}
 							</div>
 						{/if}
 					{/each}
@@ -339,7 +339,10 @@
 								>
 							{/if}
 							{#if !translation}
-								<button class="text-white font-bold py-2 px-4 rounded mt-3" on:click={handleTranslation}>Translate</button>
+								<button
+									class="text-white font-bold py-2 px-4 rounded mt-3"
+									on:click={handleTranslation}>Translate</button
+								>
 							{/if}
 							{#if splitMessage}
 								<button
@@ -405,6 +408,15 @@
 		width: 100%;
 		gap: 1rem;
 		overflow-y: scroll;
+
+		/* Hide scrollbar for Chrome, Safari, and Opera */
+		&::-webkit-scrollbar {
+			display: none;
+		}
+
+		/* Hide scrollbar for IE, Edge, and Firefox */
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
 	}
 
 	.sentence-container {
@@ -464,6 +476,15 @@
 		background-color: rgba(31, 31, 221, 0.4);
 		font-family: 'GeistMedium', sans-serif;
 		overflow-y: scroll;
+
+		/* Hide scrollbar for Chrome, Safari, and Opera */
+		&::-webkit-scrollbar {
+			display: none;
+		}
+
+		/* Hide scrollbar for IE, Edge, and Firefox */
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
 	}
 
 	main {
@@ -487,6 +508,15 @@
 		height: 100%;
 		overflow-y: auto;
 		border-right: 4px solid rgba(255, 255, 255, 0.25);
+
+		/* Hide scrollbar for Chrome, Safari, and Opera */
+		&::-webkit-scrollbar {
+			display: none;
+		}
+
+		/* Hide scrollbar for IE, Edge, and Firefox */
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
 	}
 
 	.new-chat {

@@ -132,20 +132,6 @@
 </main>
 
 <style>
-	/* @font-face {
-		font-family: 'GeistMedium';
-		src: url('Geist-Medium.ttf') format('truetype');
-		font-weight: normal;
-		font-style: normal;
-	}
-
-	@font-face {
-		font-family: 'GeistBlack';
-		src: url('Geist-Black.ttf') format('truetype');
-		font-weight: normal;
-		font-style: normal;
-	} */
-
 	main {
 		height: calc(100vh - 85px);
 		font-family: 'GeistMedium', sans-serif;

@@ -110,7 +110,7 @@
 		</div>
 	{:else}
 		<p>You are not signed in.</p>
-		<button on:click={() => goto('/login')}>Go to Login</button>
+		<button class="text-white font-bold py-2 px-4 rounded mt-3" on:click={() => goto('/login')}>Go to Login</button>
 	{/if}
 </div>
 
@@ -128,20 +128,6 @@
 	.card:hover {
 		background-color: rgba(31, 31, 221, 0.6);
 	}
-
-	/* @font-face {
-		font-family: 'OffBitBold';
-		src: url('OffBitBold.otf') format('opentype');
-		font-weight: normal;
-		font-style: normal;
-	}
-
-	@font-face {
-		font-family: 'GeistMedium';
-		src: url('Geist-Medium.ttf') format('truetype');
-		font-weight: normal;
-		font-style: normal;
-	} */
 
 	.container {
 		display: flex;

@@ -49,7 +49,7 @@
 
 <style>
 	/* Add your custom styles here */
-	@font-face {
+	/* @font-face {
 		font-family: 'OffBitBold';
 		src: url('OffBitBold.otf') format('opentype');
 		font-weight: normal;
@@ -61,7 +61,7 @@
 		src: url('Geist-Medium.ttf') format('truetype');
 		font-weight: normal;
 		font-style: normal;
-	}
+	} */
 
 	main {
 		height: calc(100vh - 85px);
