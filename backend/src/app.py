@@ -33,13 +33,10 @@ def create_app():
     load_dotenv()
     flask_env = os.getenv("FLASK_ENV", "development")
     print(f"FLASK_ENV: {flask_env}")
-
-    # TODO: Change the user and password to Environment variables as well, also change in yml.
-    if flask_env == 'development':
-        app.config["MONGO_URI"] = "mongodb://localhost:27017/languageDB"
-    else:
-        # TODO: This should be changed to the Atlas DB for production
-        app.config["MONGO_URI"] = "mongodb://localhost:27017/languageDB"
+    
+    # Setting up MongoDB based on the environmental variables
+    mongo_env = os.getenv("MONGO_URI", "mongodb://localhost:27017/languageDB")
+    app.config["MONGO_URI"] = mongo_env
     mongo.init_app(app)
 
     # Resetting MongoDB with mock data if we are on dev environment

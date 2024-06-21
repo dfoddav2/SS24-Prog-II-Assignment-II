@@ -87,6 +87,8 @@ def create_game(inviter_sid, invitee_sid):
     players = [inviter_sid, invitee_sid]
     random.shuffle(players)
     player1, player2 = players
+    five_letter_words = ["apfel", "birne", "chips", "dachs", "essen", "fisch", "gabel", "junge", "kabel", "lachs", "maler",
+                         "nacht", "opfer", "pilot", "quark", "radar", "sache", "tisch", "umzug", "vogel", "wagen", "xenon", "yacht", "zange"]
     # Initialize the game
     game_state = {
         "room_id": room_id,
@@ -94,7 +96,7 @@ def create_game(inviter_sid, invitee_sid):
         "player1_mail": users_list.get(player1),
         "player2": player2,
         "player2_mail": users_list.get(player2),
-        "solution": "WORTL",
+        "solution": random.choice(five_letter_words),
         "guesses": [None, None, None, None, None, None],
         "history": [],
         "turn": 0,
@@ -117,8 +119,7 @@ def on_accept_invite(inviter_sid):
     # Join the room
     join_room(room_id, sid=inviter_sid)
     join_room(room_id, sid=invitee_sid)
-    print(f"Created game, added {inviter_sid}, {
-          invitee_sid} to room ID: {room_id}")
+    # print(f"Created game, added {inviter_sid}, {invitee_sid} to room ID: {room_id}")
     # Emit the gamestate to the two players
     print("Emitting game state to the two players")
     print(f"Game state: {games[room_id]}")
