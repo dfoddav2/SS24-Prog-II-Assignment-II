@@ -61,6 +61,8 @@ To test:
 
 - Use `asd@asd` - `123` as a deafult user to look around
 - When playing `Wortle` check the console.log, I deliberately left logs there (and many other places) so that you can see what the answer is
+- When chatting if an overflow happens you can scroll down to the latest message, you don't automatically get taken to it
+- Check my video of the OpenAI and DeepL features working, and read my explanation about it in `The issue of API Keys, external libraries and their tests` section, [here is the video](./api_tests.mp4)
 
 ## Design choices
 
@@ -157,7 +159,7 @@ There are many-many small quality of life improvements and decisions with a fron
 
 Right now the main problem I have is I use sensitive API keys, accessing OpenAI and DeepL, which I of course can not safely share via my GitHub repository. When testing the application you will only be seeing placeholders and even the `pytest` of these features use patching to make sure no call is bein made to these endpoints.
 
-To make sure you can see these features work (without actually deploying) I thought I would share a Google Drive link
+To make sure you can see these features work (without actually deploying) I captured a short video of me interacting with these features [![Watch the video](./api_tests.png)](./api_tests.mp4)
 
 ## Reflections on the assignment
 
