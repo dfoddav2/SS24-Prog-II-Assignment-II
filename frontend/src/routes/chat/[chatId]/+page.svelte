@@ -608,6 +608,10 @@
 		background-color: rgba(31, 31, 221, 0.8);
 	}
 
+	.text:last-of-type {
+		margin-bottom: 150px;
+	}
+
 	.text-user {
 		align-self: self-end;
 		border-radius: 1rem 0rem 0rem 1rem;
